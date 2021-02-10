@@ -40,8 +40,8 @@
                                             <ColumnDefinition Width="*"/>
                                             <ColumnDefinition Width="1.2*"/>
                                         </Grid.ColumnDefinitions>
-                                        <Ellipse Width="14" HorizontalAlignment="Center" Grid.Column="3" Fill="#FFFF5F58" MouseDown="CloseWindow" Margin="4"/>
-                                        <Ellipse Width="14" HorizontalAlignment="Center" Grid.Column="2" Fill="#FFFFBE2F" MouseDown="MinimizeWindow" Margin="4"/>
+                                        <Ellipse Width="14" HorizontalAlignment="Center" Grid.Column="3" Fill="#FFFF5F58" MouseDown="CloseWindow" Margin="3"/>
+                                        <Ellipse Width="14" HorizontalAlignment="Center" Grid.Column="2" Fill="#FFFFBE2F" MouseDown="MinimizeWindow" Margin="3"/>
 
                                     </Grid>
                                 </Grid>
@@ -67,22 +67,45 @@
             <Setter Property="WindowStyle" Value="None">
             </Setter>
         </Style>
-        <Style x:Key="ButtonStyle" TargetType="Button">
+        <Style TargetType="Button" x:Key="ButtonStyle1">
             <Setter Property="Background" Value="Transparent">
             </Setter>
             <Setter Property="Foreground" Value="Gainsboro">
             </Setter>
-            <Setter Property="Margin" Value="19">
-            </Setter>
             <Setter Property="BorderThickness" Value="0">
-            </Setter>
-            <Setter Property="FontSize" Value="20">
             </Setter>
             <Setter Property="VerticalAlignment" Value="Center">
             </Setter>
             <Setter Property="HorizontalAlignment" Value="Center">
             </Setter>
-            <Setter Property="FontFamily" Value="/ProgrammingSchool;component/Assets/#B Nazanin">
+            <Setter Property="Padding" Value="7" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Foreground" Value="Gainsboro" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="MinHeight" Value="30" />
+            <Setter Property="MinWidth" Value="100" />
+            <Setter Property="FontWeight" Value="Bold" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="border" CornerRadius="10" BorderBrush="#000" BorderThickness="1" Background="#306cb5">
+                            <ContentPresenter Content="{TemplateBinding Content}"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="ButtonStyle2" TargetType="Button">
+            <Setter Property="Background" Value="Transparent">
+            </Setter>
+            <Setter Property="Foreground" Value="Gainsboro">
+            </Setter>
+            <Setter Property="BorderThickness" Value="0">
+            </Setter>
+            <Setter Property="VerticalAlignment" Value="Center">
+            </Setter>
+            <Setter Property="HorizontalAlignment" Value="Center">
             </Setter>
 
             <Setter Property="FontSize" Value="20" />
@@ -112,8 +135,6 @@
             <Setter Property="CornerRadius" Value="8,8,0,0">
             </Setter>
             <Setter Property="Background" Value="#FF555555">
-            </Setter>
-            <Setter Property="Height" Value="25">
             </Setter>
             <Setter Property="VerticalAlignment" Value="Top">
             </Setter>
@@ -155,12 +176,6 @@
                         <Border x:Name="border" CornerRadius="0,25,0,25" BorderBrush="#040a10" BorderThickness="1" Background="Gainsboro">
                             <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" />
                         </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsFocused" Value="true">
-                                <Setter Property="Foreground" Value="#040a10" />
-                                <Setter Property="BorderBrush" TargetName="border" Value="#040a10" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

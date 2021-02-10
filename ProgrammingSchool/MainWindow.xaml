@@ -25,7 +25,7 @@
                 <TextBox x:Name="usernameTB" Grid.Row="1"  Style="{StaticResource TextBoxStyle2}" VerticalAlignment="Bottom" Margin="12,10"  ></TextBox>
                 <TextBlock Grid.Row="2" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">password</TextBlock>
                 <PasswordBox x:Name="passwordTB" Grid.Row="2"   Style="{StaticResource PasswordBoxStyle}" VerticalAlignment="Bottom" Margin="12,10"  ></PasswordBox>
-                <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle}" Content="login" Width="190" Margin="12,0" Height="50" Click="LoginClicked"></Button>
+                <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle2}" Content="login" Width="190" Margin="12,0" Height="50" Click="LoginClicked"></Button>
             </Grid>
             <Grid Grid.Column="1" >
                 <Image  Grid.Column="0" Stretch="Fill" Source="codewolf-big.png" ></Image>
