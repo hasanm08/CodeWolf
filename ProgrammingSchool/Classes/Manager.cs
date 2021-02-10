@@ -10,11 +10,12 @@ namespace ProgrammingSchool.Classes
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string NationalId { get; set; }
+        public string Password { get; set; }
         public DateTime Birthday { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
 
-        public Manager(string id, string firstName, string lastName, string nationalId, DateTime birthday, string email, string address)
+        public Manager(string id, string firstName, string lastName, string nationalId, DateTime birthday, string email, string address,string password)
         {
             Id = id;
             FirstName = firstName;
@@ -23,6 +24,7 @@ namespace ProgrammingSchool.Classes
             Birthday = birthday;
             Email = email;
             Address = address;
+            Password=password;
         }
         public override bool Equals(object obj)
         {
