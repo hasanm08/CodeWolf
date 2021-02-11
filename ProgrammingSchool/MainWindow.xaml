@@ -6,32 +6,27 @@
         xmlns:local="clr-namespace:ProgrammingSchool"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Style="{StaticResource  CustomWindowStyle}">
-    <Grid >
-        <Grid Grid.Row="1" Style="{StaticResource GridStyle}">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="43*"/>
-                <ColumnDefinition Width="117*"/>
-            </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0" Background="#FF555555">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <TextBlock Grid.Row="0" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico" Foreground="Gainsboro" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">login</TextBlock>
 
-                <TextBlock Grid.Row="1" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">username</TextBlock>
-                <TextBox x:Name="usernameTB" Grid.Row="1"  Style="{StaticResource TextBoxStyle2}" VerticalAlignment="Bottom" Margin="12,10"  ></TextBox>
-                <TextBlock Grid.Row="2" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">password</TextBlock>
-                <PasswordBox x:Name="passwordTB" Grid.Row="2"   Style="{StaticResource PasswordBoxStyle}" VerticalAlignment="Bottom" Margin="12,10"  ></PasswordBox>
-                <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle2}" Content="login" Width="190" Margin="12,0" Height="50" Click="LoginClicked"></Button>
-            </Grid>
-            <Grid Grid.Column="1" >
-                <Image  Grid.Column="0" Stretch="Fill" Source="codewolf-big.png" ></Image>
-            </Grid>
+    <ItemsControl Style="{StaticResource MainGridStyle}">
+        <Grid Grid.Column="0" Background="#FF555555">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico" Foreground="Gainsboro" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">login</TextBlock>
 
+            <TextBlock Grid.Row="1" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">username</TextBlock>
+            <TextBox x:Name="usernameTB" Grid.Row="1"  Style="{StaticResource TextBoxStyle2}" VerticalAlignment="Bottom" Margin="12,10"  ></TextBox>
+            <TextBlock Grid.Row="2" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">password</TextBlock>
+            <PasswordBox x:Name="passwordTB" Grid.Row="2"   Style="{StaticResource PasswordBoxStyle}" VerticalAlignment="Bottom" Margin="12,10"  ></PasswordBox>
+            <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle2}" Content="login" Width="190" Margin="12,0" Height="50" Click="LoginClicked"></Button>
+        </Grid>
+        <Grid Grid.Column="1" >
+            <Image  Grid.Column="0" Stretch="Fill" Source="codewolf-big.png" ></Image>
         </Grid>
 
-    </Grid>
+    </ItemsControl>
+
 </Window>

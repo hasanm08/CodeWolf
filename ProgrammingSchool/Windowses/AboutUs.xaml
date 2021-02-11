@@ -1,0 +1,29 @@
+﻿<Window x:Class="ProgrammingSchool.Windowses.AboutUs"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProgrammingSchool.Windowses"
+        mc:Ignorable="d"
+        Title="AboutUs" Height="450" Width="800" Style="{StaticResource CustomWindowStyle}" Loaded="AboutUs_Loading">
+    <ItemsControl Style="{StaticResource MainGridStyle}">
+        <Grid Grid.Column="0" Background="#FF555555">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Source="/ProgrammingSchool;component/Assets/window_icon.png" ></Image>
+            <TextBlock Grid.Row="1" Foreground="#306cb5" VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico" FontSize="24">Code Wolf</TextBlock>
+        </Grid>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="7*"></RowDefinition>
+                <RowDefinition Height="3*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Margin="8" FontFamily="Times New Roman" FontSize="22" FontWeight="Bold">We Accelerate the Innovation Journey</TextBlock>
+            <Label x:Name="aboutUsLabel" VerticalAlignment="Top" FlowDirection="LeftToRight" Grid.Row="1" Margin="8" Height="{Binding Source=Content}" FontFamily="Times New Roman" FontSize="19" ></Label>
+            <Button Grid.Row="2" HorizontalAlignment="Right" Margin="8" VerticalAlignment="Center" Style="{StaticResource ButtonStyle1}" Click="Back_Clicked" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico">Back</Button>
+        </Grid>
+    </ItemsControl>
+</Window>
