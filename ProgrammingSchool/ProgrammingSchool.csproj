@@ -14,6 +14,8 @@
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -74,6 +76,9 @@
     <Compile Include="Windowses\CustomMessageBox.xaml.cs">
       <DependentUpon>CustomMessageBox.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windowses\Manager\ManagerMainWindow.xaml.cs">
+      <DependentUpon>ManagerMainWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -102,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windowses\CustomMessageBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windowses\Manager\ManagerMainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -175,6 +184,20 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\window_icon_v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\add-user.png" />
+    <Resource Include="Assets\book.png" />
+    <Resource Include="Assets\desk.png" />
+    <Resource Include="Assets\ebook.png" />
+    <Resource Include="Assets\graduate.png" />
+    <Resource Include="Assets\information.png" />
+    <Resource Include="Assets\menu.png" />
+    <Resource Include="Assets\phone-call.png" />
+    <Resource Include="Assets\right-arrow.png" />
+    <Resource Include="Assets\student %281%29.png" />
+    <Resource Include="Assets\student.png" />
+    <Resource Include="Assets\teacher.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
