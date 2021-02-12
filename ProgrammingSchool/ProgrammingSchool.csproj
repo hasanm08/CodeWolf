@@ -124,10 +124,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Assets\BNAZANIN.TTF" />
-    <Resource Include="Assets\BNAZANNO.TTF" />
-    <Resource Include="Assets\BNAZNNBD.TTF" />
-    <Resource Include="Assets\Pacifico-Regular.ttf" />
+    <Resource Include="Assets\Fonts\BZiba.ttf" />
+    <Resource Include="Assets\Fonts\SFANTEZY.TTF" />
+    <Resource Include="Assets\Fonts\SNARENJ.TTF" />
+    <Resource Include="Assets\Fonts\BNazanin.ttf" />
+    <Resource Include="Assets\Fonts\BNaznnBd.ttf" />
+    <Resource Include="Assets\Fonts\Pacifico-Regular.ttf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -170,6 +172,9 @@
     <Resource Include="Assets\telegram.png" />
     <Resource Include="Assets\twitter.png" />
     <Resource Include="Assets\whatsapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\window_icon_v2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

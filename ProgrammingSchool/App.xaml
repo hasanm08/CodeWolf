@@ -30,7 +30,7 @@
                                             <ColumnDefinition Width="3*"></ColumnDefinition>
                                         </Grid.ColumnDefinitions>
                                         <Image x:Name="icon" Source="Assets/window_icon.png" Grid.Column="0"></Image>
-                                        <TextBlock x:Name="title" Grid.Column="1" Background="Transparent" Width="{Binding Source=Text}" Text="Code Wolf" Foreground="#306cb5"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico" ></TextBlock>
+                                        <TextBlock x:Name="title" Grid.Column="1" Background="Transparent" Width="{Binding Source=Text}" Text="Code Wolf" Foreground="#306cb5"  FontSize="16" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="/ProgrammingSchool;component/Assets/Fonts/#Pacifico"  ></TextBlock>
 
                                     </Grid>
                                     <Grid Grid.Column="3">
@@ -68,6 +68,7 @@
             </Setter>
         </Style>
         <Style TargetType="Button" x:Key="ButtonStyle1">
+            <Setter Property="FontFamily" Value="/ProgrammingSchool;component/Assets/Fonts/#B Ziba"></Setter>
             <Setter Property="Background" Value="Transparent">
             </Setter>
             <Setter Property="Foreground" Value="Gainsboro">
@@ -110,7 +111,7 @@
             </Setter>
 
             <Setter Property="FontSize" Value="20" />
-            <Setter Property="FontFamily" Value="Forte"></Setter>
+            <Setter Property="FontFamily" Value="/ProgrammingSchool;component/Assets/Fonts/#B Ziba"></Setter>
             <Setter Property="MinHeight" Value="30" />
             <Setter Property="MinWidth" Value="150" />
             <Setter Property="Padding" Value="8" />
@@ -135,8 +136,8 @@
                     <ItemsPanelTemplate>
                         <Grid Background="Gainsboro">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width=".8*"/>
                                 <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width=".8*"/>
                             </Grid.ColumnDefinitions>
                         </Grid>
                     </ItemsPanelTemplate>
@@ -144,7 +145,7 @@
             </Setter>
         </Style>
         <Style x:Key="BorderStyle" TargetType="Border">
-            <Setter Property="FlowDirection" Value="LeftToRight">
+            <Setter Property="FlowDirection" Value="RightToLeft">
             </Setter>
             <Setter Property="Padding" Value="1"></Setter>
             <Setter Property="CornerRadius" Value="8,8,0,0">
@@ -165,15 +166,9 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="{x:Type TextBox}">
-                        <Border x:Name="border" CornerRadius="10" BorderBrush="#000" BorderThickness="2" Background="#fff">
+                        <Border x:Name="border" CornerRadius="10" BorderBrush="#040a10" BorderThickness="1" Background="Gainsboro">
                             <ScrollViewer x:Name="PART_ContentHost" Focusable="false" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden" />
                         </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsFocused" Value="true">
-                                <Setter Property="Foreground" Value="Blue" />
-                                <Setter Property="BorderBrush" TargetName="border" Value="Blue" />
-                            </Trigger>
-                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

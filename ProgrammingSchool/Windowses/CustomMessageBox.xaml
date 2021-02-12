@@ -38,8 +38,8 @@
                 <RowDefinition Height="2*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" FontSize="14" x:Name="messageTB" Width="{Binding Source=Text}" Height="{Binding Source=Text}" VerticalAlignment="top" HorizontalAlignment="Left" Margin="8"></TextBlock>
-            <Button Grid.Row="1" Click="okClicked" Style="{StaticResource ButtonStyle1}" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico"> ok</Button>
+            <TextBlock FlowDirection="RightToLeft" Grid.Row="0" FontSize="14" x:Name="messageTB" Width="{Binding Source=Text}" Height="{Binding Source=Text}" VerticalAlignment="top" HorizontalAlignment="Right" Margin="8" FontFamily="/ProgrammingSchool;component/Assets/Fonts/#B Nazanin"></TextBlock>
+            <Button Grid.Row="1" Click="okClicked" Style="{StaticResource ButtonStyle1}" >تایید</Button>
         </Grid>
 
     </Grid>

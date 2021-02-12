@@ -8,22 +8,22 @@
         Title="MainWindow" Height="450" Width="800" Style="{StaticResource  CustomWindowStyle}">
 
     <ItemsControl Style="{StaticResource MainGridStyle}">
-        <Grid Grid.Column="0" Background="#FF555555">
+        <Grid Grid.Column="1" Background="#FF555555">
             <Grid.RowDefinitions>
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0" FontFamily="/ProgrammingSchool;component/Assets/#Pacifico" Foreground="Gainsboro" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">login</TextBlock>
+            <TextBlock Grid.Row="0" FontFamily="/ProgrammingSchool;component/Assets/Fonts/#2  Fantezy" Foreground="Gainsboro" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center">ورود</TextBlock>
 
-            <TextBlock Grid.Row="1" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">username</TextBlock>
+            <TextBlock Grid.Row="1" FontFamily="/ProgrammingSchool;component/Assets/Fonts/#B Ziba" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Right">نام کاربری</TextBlock>
             <TextBox x:Name="usernameTB" Grid.Row="1"  Style="{StaticResource TextBoxStyle2}" VerticalAlignment="Bottom" Margin="12,10"  ></TextBox>
-            <TextBlock Grid.Row="2" FontFamily="Forte" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Left">password</TextBlock>
+            <TextBlock Grid.Row="2" FontFamily="/ProgrammingSchool;component/Assets/Fonts/#B Ziba" Foreground="Gainsboro" FontSize="20" VerticalAlignment="top" Margin="12,8" HorizontalAlignment="Right">رمز عبور</TextBlock>
             <PasswordBox x:Name="passwordTB" Grid.Row="2"   Style="{StaticResource PasswordBoxStyle}" VerticalAlignment="Bottom" Margin="12,10"  ></PasswordBox>
-            <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle2}" Content="login" Width="190" Margin="12,0" Height="50" Click="LoginClicked"></Button>
+            <Button x:Name="loginButton" Grid.Row="3" Style="{StaticResource ButtonStyle2}" Content="ورود" Width="190" Margin="12,0" Height="50" Click="LoginClicked" ></Button>
         </Grid>
-        <Grid Grid.Column="1" >
+        <Grid Grid.Column="0" >
             <Image  Grid.Column="0" Stretch="Fill" Source="codewolf-big.png" ></Image>
         </Grid>
 

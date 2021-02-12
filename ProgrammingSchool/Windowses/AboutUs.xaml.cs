@@ -32,10 +32,9 @@ namespace ProgrammingSchool.Windowses
 
         private void AboutUs_Loading(object sender, RoutedEventArgs e)
         {
-            aboutUsLabel.Content = "Mainstream media may claim that the demise of human labor is upon\n";
-            aboutUsLabel.Content += "us, but the future is quite the opposite. Humans will always be a critical\n";
-            aboutUsLabel.Content += "part of the innovation journey, but the same cannot be said for\n";
-            aboutUsLabel.Content += "organizations who play it safe.";
+            aboutUsLabel.Content = "رسانه های جریان اصلی ممکن است ادعا کنند که از بین رفتن نیروی انسانی بر دوش ما است ، " + "\n";
+            aboutUsLabel.Content += "اما آینده کاملاً برعکس است. انسانها همیشه بخش مهمی از سفر نوآوری خواهند بود ، اما در مورد " + "\n";
+            aboutUsLabel.Content += "سازمانهایی که این کار را ایمن انجام می دهند نمی توان همین را گفت";
         }
     }
 }
